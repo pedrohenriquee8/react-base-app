@@ -1,24 +1,34 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@models/*": ["core/domain/models/*"],
+      "@typing/*": ["core/domain/types/*"],
+      "@interfaces/*": ["core/interfaces/*"],
+      "@services/*": ["core/services/*"],
+      "@utils/*": ["core/utils/*"],
+      "@api/*": ["infra/api/*"],
+      "@assets/*": ["ui/assets/*"],
+      "@components/*": ["ui/components/*"],
+      "@contexts/*": ["ui/contexts/*"],
+      "@routes/*": ["ui/routes/*"],
+      "@pages/*": ["ui/pages/*"],
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
