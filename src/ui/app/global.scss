@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Inter, sans-serif;
+    src: url("./../assets/fonts/Inter-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Inter, sans-serif;
+    src: url("./../assets/fonts/Inter-ExtraLight.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Inter, sans-serif;
+    src: url("./../assets/fonts/Inter-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Inter, sans-serif;
+    src: url("./../assets/fonts/Inter-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Inter, sans-serif;
+    src: url("./../assets/fonts/Inter-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Inter, sans-serif;
+    src: url("./../assets/fonts/Inter-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Inter, sans-serif;
+    src: url("./../assets/fonts/Inter-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Inter, sans-serif;
+    src: url("./../assets/fonts/Inter-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Inter, sans-serif;
+    src: url("./../assets/fonts/Inter-Black.ttf");
+    font-weight: 900;
+}
+
+:root {
+    /* Colors */
+    /* Blue */
+    --color-blue-800: hsl(249, 100%, 27%);
+    --color-blue-700: hsl(250, 100%, 35%);
+    --color-blue-600: hsl(249, 92%, 52%);
+    --color-blue-500: hsl(244, 92%, 63%);
+    --color-blue-400: hsl(248, 100%, 71%);
+    --color-blue-300: hsl(241, 89%, 79%);
+    --color-blue-200: hsl(241, 89%, 89%);
+    --color-blue-100: hsl(242, 88%, 94%);
+    --color-blue-50: hsl(246, 100%, 98%);
+
+    /* White */
+    --color-white: hsl(0, 0%, 100%);
+
+    /* Gray scale */
+    --color-gray-100: #1c1c1c; // used mainly for titles and bold text.
+    --color-gray-200: #575757; // used primarily for body text.
+    --color-gray-300: #969696; // widely used for small text and to fill icons.
+    --color-gray-400: #e8e8e8; // used for small details such as borders, dividers and line colors.
+    --color-gray-500: #f7f7f7; // used for background secondary
+    --color-gray-600: #ffffff; // used for background primary
+
+    /* Image default */
+    --color-image-default: hsl(0, 0%, 86%);
+
+    /* Yellow */
+    --color-chewie-900: hsl(40, 100%, 50%);
+    --color-chewie-800: hsl(40, 100%, 65%);
+    --color-chewie-700: hsl(40, 88%, 70%);
+    --color-chewie-600: hsl(40, 90%, 80%);
+
+    /* Red */
+    --color-maul-900: hsl(0, 100%, 50%);
+    --color-maul-800: hsl(0, 100%, 62%);
+    --color-maul-700: hsl(0, 100%, 70%);
+    --color-maul-600: hsl(0, 100%, 80%);
+
+    /* Green */
+    --color-yoda-900: hsl(129, 85%, 38%);
+    --color-yoda-800: hsl(115, 47%, 50%);
+    --color-yoda-700: hsl(115, 43%, 67%);
+    --color-yoda-600: hsl(122, 43%, 83%);
+    
+    --color-primary: var(--color-blue-500);
+    --color-primary-light: var(--color-blue-400);
+    --color-primary-dark: var(--color-blue-600);
+
+    --text-title-color: var(--color-gray-100);
+    --text-body-color: var(--color-gray-200);
+    --text-sm-color: var(--color-gray-300);
+    --icons-color: var(--color-gray-300);
+    --icons-hover-color: var(--color-gray-200);
+    --borders-color: var(--color-gray-400);
+    --background-secondary-color: var(--color-gray-500);
+    --background-primary-color: var(--color-gray-600);
+
+    /* Spacing */
+    --spacing-4: 4px;
+    --spacing-8: 8px;
+    --spacing-12: 12px;
+    --spacing-16: 16px;
+    --spacing-24: 24px;
+    --spacing-32: 32px;
+    --spacing-40: 40px;
+    --spacing-48: 48px;
+    --spacing-56: 56px;
+    --spacing-64: 64px;
+    --spacing-72: 72px;
+    --spacing-80: 80px;
+    --spacing-96: 96px;
+
+    /* Radius */
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-xxl: 32px;
+    --radius-full: 50%;
+
+    /* Font sizes */
+    --body-fs-lg: 1.125rem; //18px
+    --body-fs-md: 1rem; //16px
+    --body-fs-sm: 0.875rem; //14px
+    --body-fs-xs: 0.75rem; //12px
+
+    /* Font weights */
+    --font-weight-thin: 100; 
+    --font-weight-extralight: 200; 
+    --font-weight-light: 300; 
+    --font-weight-normal: 400; 
+    --font-weight-medium: 500; 
+    --font-weight-semibold: 600; 
+    --font-weight-bold: 700; 
+    --font-weight-extrabold: 800; 
+    --font-weight-black: 900; 
+
+    /* Line heights */
+    --body-ln-lg: 2rem; //32px
+    --body-ln-md: 1.75rem; //28px
+    --body-ln-sm: 1.625rem; //26px
+    --body-ln-xs: 1.5rem; //24px
+
+    @media (prefers-color-scheme: dark) {
+        --color-gray-100: rgba(255, 255, 255, 0.9);
+        --color-gray-200: rgba(255, 255, 255, 0.7);
+        --color-gray-300: rgba(255, 255, 255, 0.4);
+        --color-gray-400: rgba(255, 255, 255, 0.1);
+        --color-gray-500: #1c1c1c;
+        --color-gray-600: #111111;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    min-height: 100svh;
+    background-color: var(--background-primary-color);
+    color: var(--text-body-color);
+    
+    #root {
+        height: 100%;
+    }
+}
+
+h1 {
+    font-size: 4rem; // 64px
+    line-height: 4.5rem; // 72px
+}
+
+h2 {
+    font-size: 3rem; // 48px
+    line-height: 3.5rem; // 56px
+}
+
+h3 {
+    font-size: 2.5rem; //40px
+    line-height: 3rem; // 48px
+}
+
+h4 {
+    font-size: 2rem; // 32px 
+    line-height: 2.5rem; // 40px
+}
+
+h5 {
+    font-size: 1.5rem; // 24px
+    line-height: 2rem; // 32px
+}
+
+h6 {
+    font-size: 1rem; // 16px
+    line-height: 1.5rem; // 24px
+}
+
+p {
+    font-size: var(--body-fs-lg);
+    line-height: var(--body-ln-lg);
+    color: var(--text-body-color);
+    font-weight: var(--font-weight-normal);
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    color: var(--text-title-color);
+}
+
+@media (max-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
+}  
