@@ -4,8 +4,8 @@
 - [x] Criar um repositório
 - [x] Configurar sistema de arquivos e aliases
 - [x] Configurar o ESLint
-- [ ] Criar um arquivo de estilização global
-- [ ] Criar uma estilização para textos
+- [x] Criar um arquivo de estilização global
+- [x] Criar uma estilização para textos
 - [ ] Criar o primeiro componente chamado `<Button />`
 - [ ] Melhorar a qualidade gráfica da aplicação
 - [ ] Fazer de componente
